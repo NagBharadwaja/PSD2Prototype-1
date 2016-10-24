@@ -1,0 +1,5 @@
+body{
+	@include linear-gradient(black 0px, transparent 100px);
+	font-family: $helvetica;
+	color: white;
+}

@@ -1,0 +1,39 @@
+/*Content section*/
+
+.content{
+
+	$large-screen: new-breakpoint(min-width 901px max-width 1080px);
+	$medium-screen: new-breakpoint( min-width 821px max-width 900px);
+	$small-screen: new-breakpoint(min-width 701px max-width 820px);
+	$extra-small-screen: new-breakpoint(max-width 700px);
+
+	@include span-columns(6);
+	float: none;
+	margin: 0 auto;
+	margin-top: 3%;
+	.message p{
+		font-weight: 700;
+		font-family: $helvetica;
+		line-height: 1.1;
+		font-size: 1.2em;
+		
+		@include media($large-screen) {
+			font-size: 1.0em;
+		  }
+		
+		@include media($medium-screen) {
+			font-size: 0.9em;
+		  }
+		  
+		@include media($small-screen) {
+			font-size: 0.8em;
+		  }
+		  
+		@include media($extra-small-screen) {
+			font-size: 0.7em;
+		  }
+	}
+	span{
+		color: red;
+	}
+}	
